@@ -52,6 +52,11 @@ ul
 .contenedor p {
     color: white;
 }
+
+.cambiado {
+    color: gray;
+}
+
 </style>
 <!--[if gte mso 9]><xml>
  <o:shapedefaults v:ext="edit" spidmax="3075" fillcolor="#5b9bd5 [1]"
@@ -152,7 +157,7 @@ left:33px;top:162px;width:735px;height:222px'>
   "Browallia New";color:white;font-weight:bold;language:es-MX'>UN NUEVO INTEGRANTE ACECHA AL GRUPO</span></p>
   <p v-else class=MsoNormal style='text-align:center;margin-bottom:0pt;text-align:
   center'><span lang=es-MX style='font-size:48.0pt;line-height:119%;font-family:
-  "Browallia New";color:white;font-weight:bold;language:es-MX'>Y SU NOMBRE ES: <span v-text="nombre"></span></span></p>
+  "Browallia New";color:white;font-weight:bold;language:es-MX'>Y SU NOMBRE ES: <span v-text="nombre" id="elemento"></span></span></p>
   </div>
   <![if !vml]></td>
  </tr>
@@ -160,7 +165,7 @@ left:33px;top:162px;width:735px;height:222px'>
 <div class="contenedor">
     <p>Por favor, ingresa tu nombre, nos quedamos sin presupuesto para tener a alguien mejor</p>
     <input type="text" v-model="nombre">
-    <button v-on:click="metodoPrueba()">Cambiar estilo</button>
+    <button v-on:click="metodoPrueba(nombre)">Cambiar estilo</button>
 </div>
 </span><![endif]>
 </div>
